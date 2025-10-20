@@ -17,6 +17,7 @@ This assignment consists of two parts:
 ## Getting Started
 
 1. **Fork this repository**:
+
    - Click the **Fork** button at the top right of this page
    - This creates a copy under your GitHub account
 
@@ -51,6 +52,7 @@ This assignment consists of two parts:
    ```
 
 7. **Create a Pull Request**:
+
    - Go to your fork on GitHub
    - Click **"Pull Request"** → **"New Pull Request"**
    - Select your branch (`firstname-lastname`)
@@ -98,8 +100,6 @@ Once you've completed both parts:
 1. Push your branch to your forked repository
 2. Create a Pull Request to the original repository
 3. Email us with the link to your pull request
-
-**📧 Email Template**: Use [EMAIL_TEMPLATE_FOR_CANDIDATES.md](EMAIL_TEMPLATE_FOR_CANDIDATES.md) - just copy, fill in your details, and send!
 
 See [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md) for detailed step-by-step instructions.
 

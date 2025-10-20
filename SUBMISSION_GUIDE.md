@@ -131,12 +131,14 @@ git push --set-upstream origin firstname-lastname
 4. **Click "compare across forks"** (important!)
 
 5. **Select your fork and branch**:
+
    - **base repository**: `pnp-minh/junior-fe-assignment` (base: `main`)
    - **head repository**: `YOUR-USERNAME/junior-fe-assignment` (compare: `firstname-lastname`)
 
 6. **Add a title**: "Assignment Submission - [Your Name]"
 
 7. **Add description** (optional but recommended):
+
    ```
    ## Submission Details
    - Name: [Your Full Name]
@@ -150,9 +152,7 @@ git push --set-upstream origin firstname-lastname
 
 ### 8. Notify Us
 
-Send an email to **minh@papers-pens.com** using the template below.
-
-**📧 Copy-paste ready email template** → See [EMAIL_TEMPLATE_FOR_CANDIDATES.md](EMAIL_TEMPLATE_FOR_CANDIDATES.md)
+Send an email to **minh@papers-pens.com**
 
 **Quick email template:**
 
