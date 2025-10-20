@@ -16,23 +16,27 @@ This assignment consists of two parts:
 
 ## Getting Started
 
-1. **Clone this repository**:
+1. **Fork this repository**:
+   - Click the **Fork** button at the top right of this page
+   - This creates a copy under your GitHub account
+
+2. **Clone your fork**:
 
    ```bash
-   git clone https://github.com/pnp-minh/junior-fe-assignment.git
+   git clone https://github.com/YOUR-USERNAME/junior-fe-assignment.git
    cd junior-fe-assignment
    ```
 
-2. **Create your own branch** (use your name):
+3. **Create your own branch** (use your name):
 
    ```bash
    git checkout -b firstname-lastname
    # Example: git checkout -b john-doe
    ```
 
-3. **Complete both parts** of the assignment (see folders below)
+4. **Complete both parts** of the assignment (see folders below)
 
-4. **Commit your work** with clear, meaningful messages:
+5. **Commit your work** with clear, meaningful messages:
 
    ```bash
    git add .
@@ -40,13 +44,20 @@ This assignment consists of two parts:
    git commit -m "Complete Part 2: Component implementation"
    ```
 
-5. **Push your branch** to the repository:
+6. **Push to your fork**:
 
    ```bash
    git push origin firstname-lastname
    ```
 
-6. **You're done!** We'll review your branch directly. No pull request needed.
+7. **Create a Pull Request**:
+   - Go to your fork on GitHub
+   - Click **"Pull Request"** → **"New Pull Request"**
+   - Select your branch (`firstname-lastname`)
+   - Click **"Create Pull Request"**
+   - Add any notes or comments in the description
+
+8. **You're done!** We'll review your pull request.
 
 ## Time Limit
 
@@ -82,7 +93,15 @@ junior-fe-assignment/
 
 ## Submission
 
-See [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md) for detailed instructions.
+Once you've completed both parts:
+
+1. Push your branch to your forked repository
+2. Create a Pull Request to the original repository
+3. Email us with the link to your pull request
+
+**📧 Email Template**: Use [EMAIL_TEMPLATE_FOR_CANDIDATES.md](EMAIL_TEMPLATE_FOR_CANDIDATES.md) - just copy, fill in your details, and send!
+
+See [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md) for detailed step-by-step instructions.
 
 ## Questions?
 

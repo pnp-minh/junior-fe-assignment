@@ -4,28 +4,36 @@ Thank you for taking the time to complete this assignment! Please follow these s
 
 ## Submission Workflow
 
-This is a **public repository**. You will work on your own branch and push it for review. Here's the simple process:
+This is a **public repository**. You will fork it, work on your own branch, and submit via pull request. Here's the process:
 
-1. ✅ Clone the repository
-2. ✅ Create your own branch
-3. ✅ Complete the assignment
-4. ✅ Push your branch
-5. ✅ Email us when done
-
-**Important**: We will review your branch directly. **No pull request needed!**
+1. ✅ Fork the repository
+2. ✅ Clone your fork
+3. ✅ Create your own branch
+4. ✅ Complete the assignment
+5. ✅ Push to your fork
+6. ✅ Create a pull request
+7. ✅ Email us when done
 
 ---
 
 ## Step-by-Step Instructions
 
-### 1. Clone the Repository
+### 1. Fork the Repository
+
+- Go to: https://github.com/pnp-minh/junior-fe-assignment
+- Click the **Fork** button (top right)
+- This creates a copy under your GitHub account
+
+### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/pnp-minh/junior-fe-assignment.git
+git clone https://github.com/YOUR-USERNAME/junior-fe-assignment.git
 cd junior-fe-assignment
 ```
 
-### 2. Create Your Branch
+Replace `YOUR-USERNAME` with your GitHub username.
+
+### 3. Create Your Branch
 
 Use your name for the branch (lowercase, hyphenated):
 
@@ -45,7 +53,7 @@ git branch
 # Should show: * firstname-lastname
 ```
 
-### 3. Complete the Assignment
+### 4. Complete the Assignment
 
 #### Part 1: Algorithms (30-45 min)
 
@@ -68,7 +76,7 @@ npm run dev  # Test locally
 npm run build  # Verify build works
 ```
 
-### 4. Commit Your Work
+### 5. Commit Your Work
 
 Make meaningful commits as you progress:
 
@@ -99,10 +107,10 @@ git commit -m "Final polish and code cleanup"
 - ✅ Use present tense ("Add feature" not "Added feature")
 - ❌ Don't commit node_modules or build files (already in .gitignore)
 
-### 5. Push Your Branch
+### 6. Push to Your Fork
 
 ```bash
-# Push your branch to the remote repository
+# Push your branch to your forked repository
 git push origin firstname-lastname
 ```
 
@@ -112,34 +120,63 @@ If this is your first push, Git will ask you to set upstream:
 git push --set-upstream origin firstname-lastname
 ```
 
-### 6. Verify Your Submission
+### 7. Create a Pull Request
 
-Go to the GitHub repository in your browser:
+1. **Go to the original repository**: https://github.com/pnp-minh/junior-fe-assignment
 
-- You should see your branch in the branches dropdown
-- Click on your branch to verify all files are there
-- Check your commits are visible
+2. **Click "Pull Requests"** tab
 
-### 7. Notify Us
+3. **Click "New Pull Request"**
 
-Send an email to **minh@papers-pens.com**:
+4. **Click "compare across forks"** (important!)
+
+5. **Select your fork and branch**:
+   - **base repository**: `pnp-minh/junior-fe-assignment` (base: `main`)
+   - **head repository**: `YOUR-USERNAME/junior-fe-assignment` (compare: `firstname-lastname`)
+
+6. **Add a title**: "Assignment Submission - [Your Name]"
+
+7. **Add description** (optional but recommended):
+   ```
+   ## Submission Details
+   - Name: [Your Full Name]
+   - Completion Time: [Approximate hours spent]
+
+   ## Notes
+   [Any challenges faced, decisions made, or things you'd like us to know]
+   ```
+
+8. **Click "Create Pull Request"**
+
+### 8. Notify Us
+
+Send an email to **minh@papers-pens.com** using the template below.
+
+**📧 Copy-paste ready email template** → See [EMAIL_TEMPLATE_FOR_CANDIDATES.md](EMAIL_TEMPLATE_FOR_CANDIDATES.md)
+
+**Quick email template:**
 
 ```
 Subject: Assignment Complete - [Your Full Name]
 
-Hi,
+Hi Minh,
 
-I've completed the Junior Frontend Developer technical assignment.
+I've completed the Junior Frontend Developer technical assignment and created a Pull Request.
 
-Branch name: firstname-lastname
-GitHub repo: [repo URL]
+Pull Request Link: [Paste your PR link here]
+GitHub Username: [Your GitHub username]
+Time Spent: [Approximate hours]
 
-[Optional: Any notes, challenges faced, or decisions made]
+Notes (optional):
+- [Any challenges you faced]
+- [Technical decisions you made]
+- [Questions or clarifications]
 
-Thank you!
+Thank you for the opportunity! Looking forward to hearing from you.
 
 Best regards,
-[Your Name]
+[Your Full Name]
+[Your Email]
 ```
 
 ---
