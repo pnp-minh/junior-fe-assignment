@@ -23,12 +23,14 @@ This part tests your understanding of fundamental data structures and algorithms
 Write a function that reverses the elements in an array **without using built-in reverse methods** (like `.reverse()`).
 
 **Requirements**:
+
 - Implement the function from scratch
 - Handle edge cases (empty array, single element, etc.)
 - Write clean, well-structured code
 - Time complexity should be O(n)
 
 **Example**:
+
 ```javascript
 const array = ["a", "b", "c", "d"];
 const reversed = reverseArray(array);
@@ -42,6 +44,7 @@ const reversed = reverseArray(array);
 Write a function that counts the frequency of each character in a given string using a dictionary (object) approach.
 
 **Requirements**:
+
 - Use an object/dictionary to store character counts
 - Count all characters including spaces and special characters
 - Case-sensitive counting (e.g., 'H' and 'h' are different)
@@ -49,6 +52,7 @@ Write a function that counts the frequency of each character in a given string u
 - Time complexity should be O(n)
 
 **Example**:
+
 ```javascript
 const text = "Hello world!";
 const frequency = countCharacterFrequency(text);
@@ -68,9 +72,6 @@ const frequency = countCharacterFrequency(text);
 
 - Convert to TypeScript with proper type definitions (+2 points)
 - Write unit tests for your functions
-- Add JSDoc comments
-- Handle additional edge cases
-- Provide alternative implementations with trade-off analysis
 
 ## Running Your Code
 

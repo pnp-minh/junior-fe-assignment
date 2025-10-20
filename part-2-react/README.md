@@ -25,23 +25,11 @@ Implement the component shown in the Figma design link provided here.
 ### 1. Component Implementation
 
 - Match the Figma design as closely as possible
-- Implement responsive design (mobile & desktop)
+- Implement responsive design (mobile, tablet & desktop)
 - Use clean, reusable component structure
 - Follow React best practices
 
-### 2. Styling Options
-
-**Option 1: Tailwind CSS (Recommended)**
-
-- Tailwind is already set up and ready to use
-- See examples in `src/App.jsx`
-
-**Option 2: Regular CSS**
-
-- Use `src/App.css` or create component-specific CSS files
-- Feel free to remove Tailwind if you prefer
-
-### 3. Code Quality
+### 2. Code Quality
 
 Your code should demonstrate:
 
@@ -68,27 +56,6 @@ npm run dev
 
 Visit `http://localhost:5173` to see your changes live.
 
-### 3. Project Structure (Suggested)
-
-```
-part-2-react/
-├── src/
-│   ├── components/        (Your components here)
-│   ├── App.jsx           (Main app - replace the placeholder)
-│   ├── App.css           (Custom CSS if needed)
-│   └── index.css         (Tailwind import)
-├── package.json
-└── vite.config.js
-```
-
-### 4. Implementation Steps
-
-1. Review the Figma design carefully
-2. Plan your component structure
-3. Build components incrementally
-4. Test responsiveness at different screen sizes
-5. Refine styling to match the design
-
 ## Submission Checklist
 
 - [ ] Component matches Figma design
@@ -97,7 +64,6 @@ part-2-react/
 - [ ] Production build succeeds (`npm run build`)
 - [ ] Code is clean and well-organized
 - [ ] No console errors or warnings
-- [ ] Components are reusable and modular
 
 ## Questions?
 
