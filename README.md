@@ -1,5 +1,3 @@
-# Junior Frontend Developer - Technical Assignment
-
 Welcome! This assignment is designed to assess your skills in JavaScript fundamentals and React development. The entire assignment should take approximately 2-3 hours to complete.
 
 ## Overview
@@ -71,7 +69,6 @@ Your submission will be evaluated based on:
 ```
 junior-fe-assignment/
 ├── README.md (this file)
-├── EVALUATION.md (scoring criteria)
 ├── SUBMISSION_GUIDE.md (detailed submission steps)
 ├── part-1-algorithms/
 │   ├── README.md
@@ -84,20 +81,6 @@ junior-fe-assignment/
 ```
 
 ## Submission
-
-1. **Push your branch** with all commits:
-
-   ```bash
-   git push origin firstname-lastname
-   ```
-
-2. **Email us** to notify completion:
-
-   - Subject: "Assignment Complete - [Your Name]"
-   - Include: Your branch name
-   - Optional: Any notes, assumptions, or challenges faced
-
-3. **We'll review your branch** directly (no pull request needed)
 
 See [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md) for detailed instructions.
 
