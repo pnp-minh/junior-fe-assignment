@@ -43,7 +43,7 @@ const PricingCard = ({
     }`}
   >
     {isRecommended && (
-      <div className="absolute top-5 right-5 bg-[#397AC4] text-white text-sm py-1 px-4 rounded-xl ">
+      <div className="hidden sm:block absolute top-5 right-5 bg-[#397AC4] text-white text-sm py-1 px-4 rounded-xl ">
         Đề xuất
       </div>
     )}
@@ -70,7 +70,7 @@ const PricingCard = ({
     <p className="mb-6 text-gray-600 min-h-[48px]">{description}</p>
 
     <p className="text-gray-500">Chỉ từ</p>
-    <p className="text-3xl font-bold mb-8 ">
+    <p className="sm:text-3xl font-bold mb-8 text-2xl">
       {price}{" "}
       <span className="text-base font-normal text-gray-500">/tháng</span>
     </p>
@@ -159,7 +159,7 @@ function App() {
           tập đoàn lớn đang cần mở rộng quy trình tuyển dụng thông minh với AI.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-10">
         {pricingPlans.map((plan, index) => (
           <PricingCard
             key={index}
@@ -173,21 +173,20 @@ function App() {
           />
         ))}
       </div>
-      <div className="grid grid-cols-3 gap-8 max-w-7xl mx-auto ">
-        <div className="col-span-1 rounded-xl shadow-sm flex items-center bg-[#F2F3F5] pl-6 pr-12">
+      <div className="md:grid grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="col-span-1 rounded-xl shadow-sm flex items-center bg-[#F2F3F5] pl-6 pr-12 min-h-20 md:mb-0 mb-6">
           <h3 className="text-2xl font-bold leading-tight">
             Liên hệ để báo giá gói Enterprise
           </h3>
         </div>
 
-        <div className="col-span-2 flex justify-between items-center p-6 bg-[#E6F0F8] rounded-xl">
+        <div className="col-span-2 lg:flex justify-between items-center p-6 bg-[#E6F0F8] rounded-xl">
           <div className="">
             <div className="flex mb-6">
               <div className="w-12 h-12 mr-3 rounded-lg flex items-center justify-center bg-white">
                 <img
                   src={pricingEnterprise.image}
                   alt={`${pricingEnterprise.title} Icon`}
-                  className=""
                 />
               </div>
               <div>
@@ -195,9 +194,11 @@ function App() {
                 <p className="text-gray-500">{pricingEnterprise.users}</p>
               </div>
             </div>
-            <p className="text-gray-700 ">{pricingEnterprise.description}</p>
+            <p className="text-gray-700 mb-4">
+              {pricingEnterprise.description}
+            </p>
           </div>
-          <button className="py-3 px-7 rounded-lg  font-semibold bg-white text-black ">
+          <button className="py-3 px-7 rounded-lg font-semibold bg-white text-black w-full lg:w-32 ">
             Liên hệ
           </button>
         </div>
