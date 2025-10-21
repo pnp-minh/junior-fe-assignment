@@ -1,4 +1,5 @@
 import FeatureItem from "./FeatureItem";
+import { IPricingPlan } from "../data/pricingData";
 
 const PricingCard = ({
   title,
@@ -8,7 +9,7 @@ const PricingCard = ({
   features,
   isRecommended = false,
   image,
-}) => {
+}: IPricingPlan) => {
   const cardClasses = `rounded-xl border flex flex-col p-8 shadow-md transition-all duration-300 hover:shadow-xl relative ${
     isRecommended
       ? "bg-[#E6F0F8] border-[#397AC4] shadow-lg"
@@ -52,7 +53,7 @@ const PricingCard = ({
       {/* Features List */}
       <div className="mt-8">
         <ul>
-          {features.map((feature, index) => (
+          {features?.map((feature, index) => (
             <FeatureItem key={index} text={feature} />
           ))}
         </ul>

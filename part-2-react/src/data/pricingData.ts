@@ -3,7 +3,17 @@ import StackStandardImage from "../assets/StackStandard.svg";
 import StackAdvancedImage from "../assets/StackAdvanced.svg";
 import StackEnterpriseImage from "../assets/StackEnterprise.svg";
 
-export const pricingPlans = [
+export interface IPricingPlan {
+  title: string;
+  users: string;
+  description: string;
+  price?: string;
+  features?: string[];
+  isRecommended?: boolean;
+  image: string;
+}
+
+export const pricingPlans: IPricingPlan[] = [
   {
     title: "Gói Starter",
     users: "Bắt đầu với 03 người dùng",
@@ -49,7 +59,7 @@ export const pricingPlans = [
   },
 ];
 
-export const pricingEnterprise = {
+export const pricingEnterprise: IPricingPlan = {
   title: "Gói Enterprise",
   users: "Từ 30 người sử dụng",
   description: "Phù hợp với tập đoàn bán lẻ, tài chính, đa quốc gia",
