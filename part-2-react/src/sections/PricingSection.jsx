@@ -50,7 +50,7 @@ const PricingSection = () => {
     <section className='py-16 bg-white rounded-lg shadow-md flex flex-col items-center'>
       <span className='text-base font-medium uppercase text-[#397AC4] mb-4'>Bảng giá</span>
       <h2 className='heading-2 text-Neutral-900 mb-7'>Pricing & Plan</h2>
-      <p className='max-w-[50rem] px-8 text-center text-base-medium text-Neutral-800 mb-12'>
+      <p className='max-w-[50rem] px-8 text-center text-base-medium text-Neutral-800 mb-8 md:mb-12'>
         ABC Company cung cấp nhiều lựa chọn gói linh hoạt, từ startup nhỏ đến tập đoàn lớn đang cần mở rộng quy trình
         tuyển dụng thông minh với AI.
       </p>
@@ -59,11 +59,11 @@ const PricingSection = () => {
           <PackageCard key={pkg.title} {...pkg} />
         ))}
       </div>
-      <div className='grid grid-cols-3 gap-6 w-full px-8 xl:px-20'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 w-full px-8 xl:px-20'>
         <div className='xl:h-[8.75rem] p-6 flex items-center justify-center rounded-3xl bg-Neutral-100'>
           <p className='heading-4 text-Neutral-900'>Liên hệ để báo giá gói Enterprise</p>
         </div>
-        <div className='col-span-2 flex w-full justify-between xl:items-center gap-4 flex-col xl:flex-row p-6 bg-[#EAF3FD] rounded-3xl'>
+        <div className='md:col-span-2 flex w-full justify-between xl:items-center gap-4 flex-col xl:flex-row p-6 bg-[#EAF3FD] rounded-3xl'>
           <div>
             <div className='flex items-center mb-4'>
               <img

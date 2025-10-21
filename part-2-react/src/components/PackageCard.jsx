@@ -17,21 +17,25 @@ const PackageCard = ({ title, subTitle, description, icon, price, features, reco
         <div className='flex-1'>
           <div className='flex items-center justify-between'>
             <h3 className='heading-5 text-Neutral-900 mb-0.5'>{title}</h3>
-            {recommended && <span className='p-2 rounded-lg bg-[#397AC4] text-small-medium text-white'>Đề xuất</span>}
+            {recommended && (
+              <span className='max-md:hidden p-2 rounded-lg bg-[#397AC4] text-[0.875rem] leading-none text-white'>
+                Đề xuất
+              </span>
+            )}
           </div>
           <p className='text-base-medium text-Neutral-700'>{subTitle}</p>
         </div>
       </div>
       <p className='text-base-medium text-Neutral-700 mb-8 min-h-12'>{description}</p>
       <span className='text-base-medium text-Neutral-600'>Chỉ từ</span>
-      <div className='mb-8'>
+      <div className='mb-10 xl:mb-8'>
         <span className='heading-3 text-Neutral-900'>{price.toLocaleString('vi-VN')} VND</span>
         <span className='text-base-medium text-Neutral-600'>/tháng</span>
       </div>
-      <Button className='mb-8 w-full' href={href}>
+      <Button className='mb-10 xl:mb-8 w-full' href={href}>
         Choose Plan
       </Button>
-      <ul className='space-y-4'>
+      <ul className='flex flex-col gap-4'>
         {features.map((feature, index) => (
           <li key={index} className='flex items-center'>
             <img src='/CheckCircle.png' alt='check icon' className='object-cover size-4 mr-2' />
