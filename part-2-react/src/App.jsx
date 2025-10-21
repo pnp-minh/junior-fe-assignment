@@ -2,6 +2,7 @@ import React from "react";
 import StackStarterImage from "./assets/StackStarter.svg";
 import StackStandardImage from "./assets/StackStandard.svg";
 import StackAdvancedImage from "./assets/StackAdvanced.svg";
+import StackEnterprise from "./assets/StackEnterprise.svg";
 
 const CheckIcon = () => (
   <svg
@@ -139,6 +140,12 @@ function App() {
       image: StackAdvancedImage,
     },
   ];
+  const pricingEnterprise = {
+    title: "Gói Enterprise",
+    users: "Từ 30 người sử dụng",
+    description: "Phù hợp với tập đoàn bán lẻ, tài chính, đa quốc gia",
+    image: StackEnterprise,
+  };
 
   return (
     <div className="px-5 md:px-20 py-16 font-sans">
@@ -152,7 +159,7 @@ function App() {
           tập đoàn lớn đang cần mở rộng quy trình tuyển dụng thông minh với AI.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto mb-10">
         {pricingPlans.map((plan, index) => (
           <PricingCard
             key={index}
@@ -165,6 +172,35 @@ function App() {
             image={plan.image}
           />
         ))}
+      </div>
+      <div className="grid grid-cols-3 gap-8 max-w-7xl mx-auto ">
+        <div className="col-span-1 rounded-xl shadow-sm flex items-center bg-[#F2F3F5] pl-6 pr-12">
+          <h3 className="text-2xl font-bold leading-tight">
+            Liên hệ để báo giá gói Enterprise
+          </h3>
+        </div>
+
+        <div className="col-span-2 flex justify-between items-center p-6 bg-[#E6F0F8] rounded-xl">
+          <div className="">
+            <div className="flex mb-6">
+              <div className="w-12 h-12 mr-3 rounded-lg flex items-center justify-center bg-white">
+                <img
+                  src={pricingEnterprise.image}
+                  alt={`${pricingEnterprise.title} Icon`}
+                  className=""
+                />
+              </div>
+              <div>
+                <h5 className="text-xl font-bold">{pricingEnterprise.title}</h5>
+                <p className="text-gray-500">{pricingEnterprise.users}</p>
+              </div>
+            </div>
+            <p className="text-gray-700 ">{pricingEnterprise.description}</p>
+          </div>
+          <button className="py-3 px-7 rounded-lg  font-semibold bg-white text-black ">
+            Liên hệ
+          </button>
+        </div>
       </div>
     </div>
   );
