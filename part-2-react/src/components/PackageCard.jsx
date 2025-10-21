@@ -33,7 +33,7 @@ const PackageCard = ({ title, subTitle, description, icon, price, features, reco
         <span className='text-base-medium text-Neutral-600'>/tháng</span>
       </div>
       <Button className='mb-10 xl:mb-8 w-full' href={href}>
-        Choose Plan
+        Tư vấn dùng thử
       </Button>
       <ul className='flex flex-col gap-4'>
         {features.map((feature, index) => (
