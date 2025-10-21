@@ -42,13 +42,13 @@ const PricingCard = ({
     }`}
   >
     {isRecommended && (
-      <div className="absolute top-0 right-0 bg-[#397AC4] text-white text-sm py-1 px-4 rounded-tr-xl rounded-bl-lg">
+      <div className="absolute top-5 right-5 bg-[#397AC4] text-white text-sm py-1 px-4 rounded-xl ">
         Đề xuất
       </div>
     )}
     <div className="flex items-start mb-6">
       <div
-        className={`w-10 h-10 mr-3 rounded-lg flex items-center justify-center ${
+        className={`w-12 h-12 mr-3 rounded-lg flex items-center justify-center ${
           isRecommended ? "bg-white" : "bg-gray-100"
         }`}
       >
@@ -61,7 +61,7 @@ const PricingCard = ({
         />
       </div>
       <div>
-        <h5 className="text-xl font-bold mb-1">{title}</h5>
+        <h5 className="text-xl font-bold">{title}</h5>
         <p className="text-gray-500">{users}</p>
       </div>
     </div>
