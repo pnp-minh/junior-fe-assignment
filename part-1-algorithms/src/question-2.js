@@ -20,10 +20,7 @@
  * @param {string} text - The input string to analyze
  * @returns {Object} An object with characters as keys and their frequencies as values
  */
-function countCharacterFrequency(text) {
-  // TODO: Implement your solution here
-
-}
+function countCharacterFrequency(text) {}
 
 // Test cases (you can add more)
 console.log(countCharacterFrequency("Hello world!"));

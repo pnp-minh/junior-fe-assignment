@@ -1,0 +1,19 @@
+{
+   "name": "part-1-algorithms",
+   "version": "1.0.0",
+   "description": "**Estimated Time**: 30-45 minutes",
+   "main": "question-1.js",
+   "scripts": {
+      "question-1": "ts-node src/question-1.ts",
+      "question-2": "ts-node src/question-2.ts"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "type": "commonjs",
+   "devDependencies": {
+      "@types/node": "^24.9.1",
+      "ts-node": "^10.9.2",
+      "typescript": "^5.9.3"
+   }
+}
