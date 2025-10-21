@@ -22,21 +22,55 @@
  */
 function countCharacterFrequency(text) {
   // TODO: Implement your solution here
+  if (typeof text !== 'string') {
+    throw new TypeError('Input must be a string')
+  }
 
+  const frequency = {}
+
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i]
+    if (frequency[char]) {
+      frequency[char] += 1
+    } else {
+      frequency[char] = 1
+    }
+  }
+
+  return frequency
 }
 
+// TypeScript version
+// function countCharacterFrequency(text: string | null | undefined): { [key: string]: number } {
+//   if (typeof text !== 'string') {
+//     throw new TypeError('Input must be a string')
+//   }
+
+//   const frequency: { [key: string]: number } = {}
+
+//   for (let i = 0; i < text.length; i++) {
+//     const char = text[i]
+//     if (frequency[char]) {
+//       frequency[char] += 1
+//     } else {
+//       frequency[char] = 1
+//     }
+//   }
+//   return frequency
+// }
+
 // Test cases (you can add more)
-console.log(countCharacterFrequency("Hello world!"));
+console.log(countCharacterFrequency('Hello world!'))
 // Expected: { H: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1, '!': 1 }
 
-console.log(countCharacterFrequency("aaa"));
+console.log(countCharacterFrequency('aaa'))
 // Expected: { a: 3 }
 
-console.log(countCharacterFrequency(""));
+console.log(countCharacterFrequency(''))
 // Expected: {}
 
-console.log(countCharacterFrequency("AaBbCc"));
+console.log(countCharacterFrequency('AaBbCc'))
 // Expected: { A: 1, a: 1, B: 1, b: 1, C: 1, c: 1 }
 
 // Export for testing (if using modules)
-// module.exports = { countCharacterFrequency };
+module.exports = { countCharacterFrequency }
