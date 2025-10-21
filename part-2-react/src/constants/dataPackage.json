@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Starter",
+    "description": "Phù hợp với Startup, doanh nghiệp vừa và nhỏ",
+    "price": 150000,
+    "members": 3,
+    "options": [
+      "Tính năng cơ bản",
+      "Quét dữ liệu nhanh chóng",
+      "Xếp hạng ứng viên",
+      "Lên lịch phỏng vấn tự động",
+      "Giao tiếp tiếng Việt - dễ dùng"
+    ],
+    "special": false,
+    "recommend": false
+  },
+  {
+    "name": "Standard",
+    "description": "Phù hợp với công ty công nghệ, doanh nghiệp đang scale team",
+    "price": 2000000,
+    "members": 10,
+    "options": [
+      "Tất cả tính năng Starter",
+      "Đánh giá kỹ năng ứng viên",
+      "Phân tích real-time",
+      "Báo cáo funnel & tỷ lệ chuyển đổi tuyển",
+      "SMS Notification"
+    ],
+    "special": false,
+    "recommend": true
+  },
+  {
+    "name": "Advanced",
+    "description": "Phù hợp với công ty công nghệ, doanh nghiệp đang scale team",
+    "price": 3000000,
+    "members": 30,
+    "options": ["Tất cả tính năng Pro", "Phân quyền người dùng theo chi nhánh", "Lộ trình đào tạo"],
+    "special": false,
+    "recommend": false
+  },
+  {
+    "name": "Enterprise",
+    "description": "Phù hợp với tập đoàn bán lẻ, tài chính, đa quốc gia",
+    "price": 0,
+    "members": 30,
+    "options": [],
+    "special": true,
+    "recommend": false
+  }
+]

@@ -22,7 +22,17 @@
  */
 function countCharacterFrequency(text) {
   // TODO: Implement your solution here
-
+  const arrText = text.split("");
+  const result = arrText.reduce((giatritichluy, giatrihientai, index, array) => {
+    if (giatritichluy[giatrihientai] === undefined) {
+      giatritichluy[giatrihientai] = 1;
+    }
+    else {
+      giatritichluy[giatrihientai] = giatritichluy[giatrihientai] + 1;
+    }
+    return giatritichluy;
+  }, {});
+  return result;
 }
 
 // Test cases (you can add more)
