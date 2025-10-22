@@ -22,6 +22,19 @@
 function reverseArray(array) {
   // TODO: Implement your solution here
 
+  if (!Array.isArray(array)) return null;
+
+  const arr = [...array];
+  let left = 0;
+  let right = array.length - 1;
+
+  while (left < right) {
+    [arr[left], arr[right]] = [arr[right], arr[left]];
+    left++;
+    right--;
+  }
+
+  return arr;
 }
 
 // Test cases (you can add more)
@@ -29,6 +42,7 @@ console.log(reverseArray(["a", "b", "c", "d"])); // Expected: ["d", "c", "b", "a
 console.log(reverseArray([1, 2, 3, 4, 5])); // Expected: [5, 4, 3, 2, 1]
 console.log(reverseArray(["single"])); // Expected: ["single"]
 console.log(reverseArray([])); // Expected: []
+console.log(reverseArray(null)); // Expected: null
 
 // Export for testing (if using modules)
 // module.exports = { reverseArray };

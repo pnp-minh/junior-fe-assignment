@@ -22,7 +22,12 @@
  */
 function countCharacterFrequency(text) {
   // TODO: Implement your solution here
-
+  if (typeof text !== "string" || text.length === 0) return {};
+  const frequency = {};
+  for (let char of text) {
+    frequency[char] = frequency[char] + 1 || 1;
+  }
+  return frequency;
 }
 
 // Test cases (you can add more)
@@ -37,6 +42,9 @@ console.log(countCharacterFrequency(""));
 
 console.log(countCharacterFrequency("AaBbCc"));
 // Expected: { A: 1, a: 1, B: 1, b: 1, C: 1, c: 1 }
+
+console.log(countCharacterFrequency(234));
+// Expected: {}
 
 // Export for testing (if using modules)
 // module.exports = { countCharacterFrequency };

@@ -1,0 +1,73 @@
+import {
+  PlanFeatureIcon,
+  StackIcon,
+  StackPlusIcon,
+  StarterIcon,
+} from "@/assets/icons";
+import { IPlan } from "@/types";
+
+export const plans: IPlan[] = [
+  {
+    id: 1,
+    name: "Gói Starter",
+    price: 150_000,
+    icon: StarterIcon,
+    period: "/tháng",
+    description: "Bắt đầu với 03 người dùng",
+    subDescription: "Phù hợp với Startup, doanh nghiệp vừa và nhỏ",
+    features: [
+      { id: 1, name: "Tính năng cơ bản", icon: PlanFeatureIcon },
+      { id: 2, name: "Quét dữ liệu nhanh chóng", icon: PlanFeatureIcon },
+      { id: 3, name: "Xếp hạng ứng viên", icon: PlanFeatureIcon },
+      { id: 4, name: "Lên lịch phỏng vấn tự động", icon: PlanFeatureIcon },
+      { id: 5, name: "Giao diện tiếng Việt – dễ dùng", icon: PlanFeatureIcon },
+    ],
+    cta: "Tư vấn dùng thử",
+  },
+  {
+    id: 2,
+    name: "Gói Standard",
+    icon: StackPlusIcon,
+    price: 2_000_000,
+    isSuggested: true,
+    period: "/tháng",
+    description: "Bắt đầu với 10 người dùng",
+    subDescription: "Phù hợp với công ty công nghệ, doanh nghiệp đang scale team",
+    features: [
+      { id: 1, name: "Tất cả tính năng Starter", icon: PlanFeatureIcon },
+      { id: 2, name: "Đánh giá kĩ năng ứng viên", icon: PlanFeatureIcon },
+      { id: 3, name: "Phân tích real-time", icon: PlanFeatureIcon },
+      { id: 4, name: "Báo cáo funnel & tỷ lệ chuyển đổi tuyển", icon: PlanFeatureIcon },
+      { id: 5, name: "SMS Notification", icon: PlanFeatureIcon },
+    ],
+    cta: "Tư vấn dùng thử",
+    isPopular: true,
+  },
+  {
+    id: 3,
+    name: "Gói Advanced",
+    icon: StackIcon,
+    price: 3_000_000,
+    period: "/tháng",
+    description: "Từ 30 người sử dụng",
+    subDescription: "Phù hợp với công ty công nghệ, doanh nghiệp đang scale team",
+    features: [
+      { id: 1, name: "Tất cả tính năng Pro", icon: PlanFeatureIcon },
+      { id: 2, name: "Phân quyền người dùng theo chi nhánh", icon: PlanFeatureIcon },
+      { id: 3, name: "Lộ trình đào tạo", icon: PlanFeatureIcon },
+    ],
+    cta: "Tư vấn dùng thử",
+  },
+  {
+    id: 4,
+    name: "Gói Enterprise",
+    icon: StackPlusIcon,
+    period: "/tháng",
+    description: "Từ 30 người sử dụng",
+    subDescription: "Phù hợp với tập đoàn bán lẻ, tài chính, đa quốc gia",
+    features: [],
+    cta: "Liên hệ",
+    isPopular: true,
+    isEnterprise: true,
+  },
+];
