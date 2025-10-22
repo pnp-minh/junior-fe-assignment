@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+@theme {
+  --color-light-blue: #EAF3FD;
+  --color-dark-blue: #397AC4;
+  --color-neutral-900: #1F1F22;
+  --color-neutral-800: #3F3F45;
+  --color-neutral-700: #5F5F67;
+  --color-neutral-600: #7D7D85;
+  --color-neutral-300: #CFCFD3;
+  --color-neutral-100: #F2F3F5;
+  --text--mobile-3xl: 32px;
+  --text-desktop-3xl: 40px;
+}
+
+body {
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
