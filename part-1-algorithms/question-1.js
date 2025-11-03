@@ -19,8 +19,18 @@
  * @param {Array} array - The array to reverse
  * @returns {Array} A new array with elements in reversed order
  */
+
 function reverseArray(array) {
-  // TODO: Implement your solution here
+  const arrayLength = array.length;
+  if (arrayLength === 0) return [];
+  if (arrayLength === 1) return array;
+
+  for (let i = 0; i < Math.floor(arrayLength / 2); i++) {
+    let temp = array[i];
+    array[i] = array[arrayLength - 1 - i];
+    array[arrayLength - 1 - i] = temp;
+  }
+  return array;
 }
 
 // Export for testing

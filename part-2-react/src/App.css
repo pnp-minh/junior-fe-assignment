@@ -1,1 +1,23 @@
 /* Add your custom CSS styles here if not using Tailwind */
+.grid-custom {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  align-items: stretch;
+  margin-top: 1.75rem;
+}
+
+/* md:grid-cols-2 → Từ 768px trở lên */
+@media (min-width: 768px) {
+  .grid-custom {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-custom {
+    grid-template-columns: calc(33.33% - 16px) 66.66%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}

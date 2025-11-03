@@ -21,7 +21,15 @@
  * @returns {Object} An object with characters as keys and their frequencies as values
  */
 function countCharacterFrequency(text) {
-  // TODO: Implement your solution here
+  const textLength = text.length;
+  if (textLength === 0) return {};
+
+  const result = {};
+  for (let i = 0; i < textLength; i++) {
+    const character = text[i];
+    result[character] = (result[character] || 0) + 1;
+  }
+  return result;
 }
 
 // Export for testing

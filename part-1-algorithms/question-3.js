@@ -30,6 +30,13 @@
  */
 function makeCounter(initialValue = 0) {
   // TODO: Implement your solution here
+  let value = initialValue;
+  return {
+    get: () => value,
+    increment: () => value++,
+    decrement: () => value--,
+    reset: () => (value = initialValue),
+  };
 }
 
 // Export for testing
