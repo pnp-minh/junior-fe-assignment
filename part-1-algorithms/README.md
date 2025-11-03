@@ -38,6 +38,28 @@ const frequency = countCharacterFrequency(text);
 // Output: { H: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1, '!': 1 }
 ```
 
+### Question 3: Counter Object
+
+**File**: `question-3.js`
+
+Implement a function that creates a counter object with methods to manipulate its value.
+
+**Example**:
+
+```javascript
+const counter = makeCounter();
+counter.get(); // 0
+counter.increment(); // 1
+counter.increment(); // 2
+counter.reset(); // 0
+
+// With custom initial value
+const counter2 = makeCounter(5);
+counter2.get(); // 5
+counter2.decrement(); // 4
+counter2.reset(); // 5
+```
+
 ## Testing
 
 Run your JavaScript files with Node.js:
@@ -45,6 +67,7 @@ Run your JavaScript files with Node.js:
 ```bash
 node question-1.js
 node question-2.js
+node question-3.js
 ```
 
 **Bonus**: TypeScript solutions and unit tests are appreciated but not required.

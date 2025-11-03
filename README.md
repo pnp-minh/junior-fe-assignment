@@ -32,7 +32,8 @@ junior-fe-assignment/
 ├── part-1-algorithms/          # JavaScript algorithms
 │   ├── README.md
 │   ├── question-1.js
-│   └── question-2.js
+│   ├── question-2.js
+│   └── question-3.js
 └── part-2-react/               # React component
     ├── README.md
     └── src/
