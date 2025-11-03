@@ -1,3 +1,5 @@
+import PricingPage from "./pages/PricingPage.jsx";
+
 function App() {
   return (
     <div className="min-h-screen bg-gray-50 py-8 px-4">
@@ -20,15 +22,10 @@ function App() {
             <li>Write clean, reusable components</li>
           </ul>
         </div>
+      </div>
 
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-blue-900 mb-2">
-            📋 Your Implementation Goes Here
-          </h3>
-          <p className="text-blue-700">
-            Replace this section with your component implementation.
-          </p>
-        </div>
+      <div className='bg-white rounded-lg shadow-md'>
+          <PricingPage/>
       </div>
     </div>
   );
