@@ -23,5 +23,5 @@ function reverseArray(array) {
   // TODO: Implement your solution here
 }
 
-// Export for testing (if using modules)
-// module.exports = { reverseArray };
+// Export for testing
+export { reverseArray };

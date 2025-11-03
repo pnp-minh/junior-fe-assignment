@@ -36,8 +36,8 @@ git checkout -b firstname-lastname
 **Part 1: Algorithms** (~30-45 min)
 ```bash
 cd part-1-algorithms
-# Complete question-1.js and question-2.js
-node question-1.js && node question-2.js  # Test
+# Complete question-1.js, question-2.js, and question-3.js
+node question-1.js && node question-2.js && node question-3.js  # Test
 ```
 
 **Part 2: React Component** (~1.5-2 hours)

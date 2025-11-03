@@ -5,6 +5,13 @@ node_modules/
 
 # Testing
 coverage/
+__tests__/
+*.test.js
+test-runner.js
+TESTING.md
+part-1-algorithms/package.json
+part-1-algorithms/package-lock.json
+part-1-algorithms/vitest.config.js
 
 # Production
 dist/

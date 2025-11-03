@@ -4,7 +4,7 @@
 
 ## Instructions
 
-Complete both questions in the provided JavaScript files. Write clean, well-commented code and consider edge cases.
+Complete all three questions in the provided JavaScript files. Write clean, well-commented code and consider edge cases.
 
 **Important**: Do NOT use built-in methods that directly solve the problem (e.g., `.reverse()` for Question 1)
 
@@ -62,7 +62,7 @@ counter2.reset(); // 5
 
 ## Testing
 
-Run your JavaScript files with Node.js:
+Test your solutions by running the JavaScript files with Node.js:
 
 ```bash
 node question-1.js
@@ -70,6 +70,12 @@ node question-2.js
 node question-3.js
 ```
 
+**Tip**: Add your own `console.log` statements or test cases in each file to verify your solutions work correctly. This is optional but recommended!
+
 **Bonus**: TypeScript solutions and unit tests are appreciated but not required.
+
+## Questions?
+
+If you have any questions or need clarification, contact **minh@papers-pens.com**.
 
 Good luck!

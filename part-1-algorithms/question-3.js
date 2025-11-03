@@ -32,5 +32,5 @@ function makeCounter(initialValue = 0) {
   // TODO: Implement your solution here
 }
 
-// Export for testing (if using modules)
-// module.exports = { makeCounter };
+// Export for testing
+export { makeCounter };

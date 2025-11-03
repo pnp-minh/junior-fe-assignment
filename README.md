@@ -51,6 +51,6 @@ Detailed instructions: [SUBMISSION_GUIDE.md](SUBMISSION_GUIDE.md)
 
 ## Questions?
 
-If you have any questions or need clarification, please reach out to us.
+If you have any questions or need clarification, contact us at **minh@papers-pens.com**.
 
 Good luck! We're excited to see your work.

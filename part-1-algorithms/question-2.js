@@ -24,5 +24,5 @@ function countCharacterFrequency(text) {
   // TODO: Implement your solution here
 }
 
-// Export for testing (if using modules)
-// module.exports = { countCharacterFrequency };
+// Export for testing
+export { countCharacterFrequency };
