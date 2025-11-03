@@ -29,7 +29,19 @@
  * @returns {Object} An object with get, increment, decrement, and reset methods
  */
 function makeCounter(initialValue = 0) {
-  // TODO: Implement your solution here
+    let count = initialValue;
+
+    const get = () => count;
+    const increment = () => ++count;
+    const decrement = () => --count;
+    const reset = () => (count = initialValue)
+
+    return {
+        get,
+        increment,
+        decrement,
+        reset
+    }
 }
 
 // Export for testing

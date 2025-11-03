@@ -21,7 +21,14 @@
  * @returns {Object} An object with characters as keys and their frequencies as values
  */
 function countCharacterFrequency(text) {
-  // TODO: Implement your solution here
+    if (typeof text !== "string") return {};
+
+    const frequency = {};
+    for (let char of text) {
+        frequency[char] = (frequency[char] || 0) + 1;
+    }
+
+    return frequency;
 }
 
 // Export for testing

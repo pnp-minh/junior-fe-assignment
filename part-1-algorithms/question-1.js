@@ -20,7 +20,18 @@
  * @returns {Array} A new array with elements in reversed order
  */
 function reverseArray(array) {
-  // TODO: Implement your solution here
+    if (!Array.isArray(array)) return [];
+    const result = [...array];
+    let left = 0;
+    let right = result.length - 1;
+
+    while (left < right) {
+        [result[left], result[right]] = [result[right], result[left]];
+        left++;
+        right--;
+    }
+
+    return result;
 }
 
 // Export for testing
