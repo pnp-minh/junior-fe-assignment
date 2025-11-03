@@ -21,14 +21,7 @@
  */
 function reverseArray(array) {
   // TODO: Implement your solution here
-
 }
-
-// Test cases (you can add more)
-console.log(reverseArray(["a", "b", "c", "d"])); // Expected: ["d", "c", "b", "a"]
-console.log(reverseArray([1, 2, 3, 4, 5])); // Expected: [5, 4, 3, 2, 1]
-console.log(reverseArray(["single"])); // Expected: ["single"]
-console.log(reverseArray([])); // Expected: []
 
 // Export for testing (if using modules)
 // module.exports = { reverseArray };

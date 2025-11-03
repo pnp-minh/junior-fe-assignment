@@ -22,51 +22,25 @@ Implement the component shown in the Figma design link provided here.
 
 ## Requirements
 
-### 1. Component Implementation
-
 - Match the Figma design as closely as possible
-- Implement responsive design (mobile, tablet & desktop)
+- Implement responsive design (mobile, tablet, desktop)
 - Use clean, reusable component structure
 - Follow React best practices
 
-### 2. Code Quality
-
-Your code should demonstrate:
-
-- ✅ **Clean Code**: Readable, well-structured
-- ✅ **Component Structure**: Reusable, modular components
-- ✅ **Best Practices**: Modern React patterns
-- ✅ **Responsive Design**: Works on mobile and desktop
-- ✅ **Code Organization**: Logical folder structure
-
 ## Getting Started
-
-### 1. Install Dependencies
 
 ```bash
 cd part-2-react
 npm install
-```
-
-### 2. Start Development Server
-
-```bash
 npm run dev
 ```
 
 Visit `http://localhost:5173` to see your changes live.
 
-## Submission Checklist
-
-- [ ] Component matches Figma design
-- [ ] Responsive on mobile and desktop
-- [ ] Project runs without errors (`npm run dev`)
-- [ ] Production build succeeds (`npm run build`)
-- [ ] Code is clean and well-organized
-- [ ] No console errors or warnings
+Before submitting, ensure `npm run build` completes successfully.
 
 ## Questions?
 
-If you have any questions or need clarification, reach out to me at minh@papers-pens.com.
+If you have any questions, reach out to minh@papers-pens.com.
 
-Good luck! We're excited to see your implementation.
+Good luck!

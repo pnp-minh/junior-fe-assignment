@@ -22,21 +22,7 @@
  */
 function countCharacterFrequency(text) {
   // TODO: Implement your solution here
-
 }
-
-// Test cases (you can add more)
-console.log(countCharacterFrequency("Hello world!"));
-// Expected: { H: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1, '!': 1 }
-
-console.log(countCharacterFrequency("aaa"));
-// Expected: { a: 3 }
-
-console.log(countCharacterFrequency(""));
-// Expected: {}
-
-console.log(countCharacterFrequency("AaBbCc"));
-// Expected: { A: 1, a: 1, B: 1, b: 1, C: 1, c: 1 }
 
 // Export for testing (if using modules)
 // module.exports = { countCharacterFrequency };
