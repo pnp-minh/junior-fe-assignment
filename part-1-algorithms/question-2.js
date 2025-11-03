@@ -22,7 +22,14 @@
  */
 function countCharacterFrequency(text) {
   // TODO: Implement your solution here
+  let obj = {};
+  for (let i in text) {
+    obj[text[i]] ? (obj[text[i]] += 1) : (obj[text[i]] = 1);
+  }
+  return obj;
 }
 
 // Export for testing
 export { countCharacterFrequency };
+console.log(countCharacterFrequency("Hello world!"))
+//result = { H: 1, e: 1, l: 3, o: 2, ' ': 1, w: 1, r: 1, d: 1, '!': 1 }

@@ -30,7 +30,47 @@
  */
 function makeCounter(initialValue = 0) {
   // TODO: Implement your solution here
+  let newValue = initialValue;
+  return {
+    get() {
+      return newValue;
+    },
+    increment() {
+      newValue += 1;
+      return newValue;
+    },
+    decrement() {
+      newValue -= 1;
+      return newValue;
+    },
+    reset() {
+      newValue = initialValue;
+      return newValue;
+    },
+  };
 }
 
 // Export for testing
 export { makeCounter };
+//no initial value
+const counter = makeCounter();
+console.log(counter.get());
+console.log(counter.increment());
+console.log(counter.increment());
+console.log(counter.reset());
+// result =
+// 0
+// 1
+// 2
+// 0
+//initial value 
+const counter2 = makeCounter(5);
+console.log(counter2.get());
+console.log(counter2.increment());
+console.log(counter2.increment());
+console.log(counter2.reset());
+//result =
+// 5
+// 6
+// 7
+// 5

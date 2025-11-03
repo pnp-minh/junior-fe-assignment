@@ -20,8 +20,15 @@
  * @returns {Array} A new array with elements in reversed order
  */
 function reverseArray(array) {
-  // TODO: Implement your solution here
+  if (!Array.isArray(array)) return [];
+  const reverse = [];
+  for (let i = array.length - 1; i >= 0; i--) {
+    reverse.push(array[i]);
+  }
+  return reverse;
 }
 
 // Export for testing
 export { reverseArray };
+console.log(reverseArray(["a", "b", "c", "d"]));
+//result=[ 'd', 'c', 'b', 'a' ]
