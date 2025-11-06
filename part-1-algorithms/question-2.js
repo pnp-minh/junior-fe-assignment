@@ -22,6 +22,19 @@
  */
 function countCharacterFrequency(text) {
   // TODO: Implement your solution here
+  if (typeof text !== "string") return {};
+
+  const charFrequency = {};
+
+  for (let char of text) {
+    if (charFrequency[char]) {
+      charFrequency[char]++;
+    } else {
+      charFrequency[char] = 1;
+    }
+  }
+
+  return charFrequency;
 }
 
 // Export for testing
